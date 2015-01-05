@@ -1,15 +1,10 @@
-# Poor Man's Bloomberg App 
-
-Poor Man's Bloomberg is still in developement and should not be used.
+# Stock Dash 
+This is still in production. Not ready for use. 
 
 ## Directions
 
-TBD
-
-## Command line Interface Commands
-
-TBD
-
+Bundle Install
+Sinatra S
 
 ## Technologies Used
 + Ruby 2.0
