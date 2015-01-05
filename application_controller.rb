@@ -34,7 +34,7 @@ class ApplicationController < Sinatra::Base
   end
 
   configure :production do
-    REDIRECT_URIS_GOOGLE = "http://frozen-escarpment-3408.herokuapp.com/oauth2callback"
+    REDIRECT_URIS_GOOGLE = "https://evening-everglades-9811.herokuapp.com//oauth2callback"
   end
 
   before do

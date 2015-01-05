@@ -13,3 +13,8 @@ Sinatra S
 + Google for Oauth
 + Yahoo finance API
 + Bloomberg Television API
+
+
+URL: 
+
+<a href="http://frozen-escarpment-3408.herokuapp.com/">Stock Dash</a> 
