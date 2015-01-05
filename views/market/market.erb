@@ -1,0 +1,136 @@
+
+<h1> Market Page </h1>
+
+<div class="market-master">
+
+
+
+<div CLASS="market-table">
+<TABLE CLASS="equity-index">
+   <TR>
+      <TH COLSPAN="3">
+      <H3>US Indexes</H3>
+      </TH>
+   </TR>
+   <TR>
+      <TH>Index</TH>
+      <TH>Price</TH>
+      <TH>Change</TH>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>S&P500</TD>
+      <TD> <%= Pricing::Index::SP500_Price %>    </TD>
+      <TD> <%= Pricing::Index::SP500_MOVEMENT %>  </TD>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>NASDAQ</TD>
+      <TD> <%= Pricing::Index::NASDAQ_PRICE %>    </TD>
+      <TD> <%= Pricing::Index::NASDAQ_MOVEMENT %>  </TD>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>10yr</TD>
+      <TD> <%= Pricing::Index::TEN_YR_PRICE %>    </TD>
+      <TD> <%= Pricing::Index::TEN_YR_MOVEMENT %>  </TD>
+   </TR>
+</TABLE>
+
+<TABLE CLASS="currency-index">
+   <TR>
+      <TH COLSPAN="3">
+      <H3>Currencies</H3>
+      </TH>
+   </TR>
+   <TR>
+      <TH>Currency</TH>
+      <TH>Price</TH>
+      <TH>Change</TH>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>EUR/USD</TD>
+      <TD> <%= Pricing::Currency::EUR_PRICE %>    </TD>
+      <TD>   </TD>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>USD/BRL</TD>
+      <TD> <%= Pricing::Currency::BRL_PRICE %>    </TD>
+      <TD> <%=  %>  </TD>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>USD/JPY</TD>
+      <TD> <%= Pricing::Currency::JPY_PRICE %>    </TD>
+      <TD> <%=  %>  </TD>
+   </TR>
+</TABLE>
+
+
+<TABLE CLASS="commodities-index">
+   <TR>
+      <TH COLSPAN="3">
+      <H3>Commodities</H3>
+      </TH>
+   </TR>
+   <TR>
+      <TH>Commodity</TH>
+      <TH>Price</TH>
+      <TH>Change</TH>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>Oil</TD>
+      <TD> <%= Pricing::Commodity::OIL_PRICE %>    </TD>
+      <TD> <%= Pricing::Commodity::OIL_MOVEMENT %> </TD>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>Gold</TD>
+      <TD> <%= Pricing::Commodity::GOLD_PRICE  %>    </TD>
+      <TD> <%=  Pricing::Commodity::GOLD_MOVEMENT %>  </TD>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>NatGas</TD>
+      <TD> <%= Pricing::Commodity::NATGAS_PRICE %>    </TD>
+      <TD> <%=  Pricing::Commodity::NATGAS_MOVEMENT %>  </TD>
+   </TR>
+</TABLE>
+</div>
+
+
+
+
+<div class="BloombergTV">
+<iframe SRC='http://www.newtvworld.com/livetv/usa/bloombergtv.html' width='600' height='400' id=www.Newtvworld.com marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling='no'></iframe>
+</div>
+
+
+<div class="twitter-market">
+<a class="twitter-timeline" href="https://twitter.com/rnparks/lists/market-information" height="350" data-widget-id="509003823927410688">Tweets from https://twitter.com/rnparks/lists/market-information</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+</div> <!--market master div -->
+
+<div align="left" class="WSJ-RSS">
+<h3>WSJ RSS Feed</h3>
+   <% open(@url_wsj) do |rss| %>
+      <% feed = RSS::Parser.parse(rss) %>
+      <%= "Title: #{feed.channel.title}" %>
+         <% feed.items.each do |item| %>
+            <br>
+            <%= "Item: #{item.title}" %>
+            <%= "Item: #{item.description}" %>
+            <a href="<%= "#{item.link}" %>"><%= "Item: #{item.link}" %>   </a>
+            <br>
+
+         <% end %>
+      <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

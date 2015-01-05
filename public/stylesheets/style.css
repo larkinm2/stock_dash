@@ -1,0 +1,198 @@
+
+/* Elements that affect the document */
+
+body {
+  font-family: "Helvetica Neue", Helvetica;
+  background-color: white;
+}
+
+body h1 {
+  text-align: center;
+}
+
+footer {
+    text-align: center;
+    position: bottom;
+}
+
+div.top {
+  width: 100%;
+  background-color: #F7F7F7;
+  border-bottom: solid #245DC1 1px;
+
+}
+
+.top form {
+  width: 50%;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.top input {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+div.market-master {
+  margin-top: 5px;
+  height: 410px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Elements that affect quote table on market page */
+
+div.market-table {
+  border: solid gray 1px;
+  width: 270px;
+  height: 400px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+/* Elements that affect bloomberg tv market page */
+div.BloombergTV {
+  position: relative;
+  margin-top: 5px;
+  top: -405px;
+  left: 300px;
+}
+
+div.twitter-market {
+  width: 300px;
+  height: 400px;
+  border: solid gray 1px;
+  position: relative;
+  margin-top: 5px;
+  margin-right: 5px;
+  top: -814px;
+  left: 920px;
+}
+
+.WSJ-RSS {
+font-size: 12px;
+}
+
+div.WSJ-RSS {
+  position: relative;
+  width: 1200px;
+  margin: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: dotted gray 1px;
+}
+
+.WSJ-RSS h3 {
+  text-align: left;
+}
+
+
+p.description {
+ font-size: 13px;
+
+}
+
+
+.equity-index th {
+font-size: 12px;
+}
+
+.equity-index td {
+font-size: 10px;
+color: blue;
+width: 80px;
+}
+
+.currency-index th {
+font-size: 12px;
+}
+
+.currency-index td {
+font-size: 10px;
+color: blue;
+width: 80px;
+}
+
+.commodities-index th {
+  font-size: 12px;
+}
+
+.commodities-index td {
+  font-size: 10px;
+  color: blue;
+  width: 80px;
+}
+
+.financial_table th {
+  font-size: 15px;
+  width: 80px;
+
+}
+
+
+.financial_table td {
+  font-size: 14px;
+  color: blue;
+  width: auto;
+
+}
+
+div.financial_table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+table.financial_table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  width: auto;
+}
+
+td.key {
+  width: 350px;
+}
+
+
+/* Twitter Feed Styling */
+div.twitter-company {
+  border: solid gray 1px;
+  width: 520px;
+  margin: 10px auto auto auto;
+}
+
+
+div.option-pricing {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px
+}
+
+.option-pricing input {
+  width: 100px;
+
+}
+
+.option-pricing label {
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+
+}
+
+.option-pricing form {
+  width: 300px;
+
+}
+
+div.snapshot {
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
